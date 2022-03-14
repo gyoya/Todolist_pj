@@ -1,0 +1,114 @@
+body{
+    margin: 0px; /* body에 기본 margin 8px 이 들어가있어서 없애줌. */
+    background-image: url(images/twinkle.jpeg);
+    /* 배경화면이 반복되지 않도록함 */
+    background-repeat: no-repeat;
+    /* 배경화면의 크기가 창에 가득차도록함 */
+    background-size: cover;
+}
+
+.container{
+    background-color: white;
+    /* 보이는 화면의 높이만큼 높이를 설정 */
+    max-width: 800px;
+    border-top: 15px solid #D0B49F;
+    border-bottom: 15px solid #D0B49F;
+    height: 100%;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.title{
+    font-size: 2.2em;
+    color:rosybrown;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.input-area{
+    margin-bottom: 20px;
+}
+
+.inputBox{
+    width: 15em;
+    height: em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #D0B49F;
+}
+
+.addButton{
+    width: 7em;
+    height: 2.5em;
+    border-radius: 0.8em;
+    background-color: white;
+    border-color: #D0B49F;
+    color: rosybrown;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.task-area{
+    border:1px solid #D0B49F;
+}
+
+.task-tabs{
+    border-bottom: 1px solid #D0B49F;
+    display:flex;
+    position:relative;
+    color: rosybrown;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.task-tabs div{
+    padding: 1em;
+    cursor: pointer;
+}
+
+#under-line{
+    height: 4px;
+    background-color: #D0B49F;
+    position: absolute;
+    width: 56px;
+    left: 0px;
+    top: 65px;
+    padding: 0px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.task-done{
+    /* 텍스트에 선을 그음- */
+    text-decoration: line-through;
+    background-color: white;
+    transition:0.5s;
+}
+
+.button-box button {
+    height: 100%;
+    border: none;
+    background-color:white;
+    width:4em;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.button-box button :active{
+    position:relative;
+    top: 2px;
+}
+
+.button-box button:first-child:hover{
+    background-color: #aed685;
+}
+
+.button-box button:nth-child(2):hover{
+    background-color: rgb(255, 0, 0, 0.3);
+}
+
